@@ -1,3 +1,14 @@
+
+# Activate on Windows
+
+einmalig 
+set-executionpolicy remotesigned
+
+.\venv\Scripts\Activate.ps1
+
+pip install -r .\requirements.txt
+
+# Brew URLs
 https://www.brewflasher.com/firmware/api/project_list/all/
 https://www.brewflasher.com/firmware/api/firmware_family_list/
 https://www.brewflasher.com/firmware/api/firmware_list/all/
@@ -14,7 +25,7 @@ request_dict = {
 
 
 
-ZZA partitions
+# ZZA partitions
 
 Parsing binary partition input...
 Verifying table...
