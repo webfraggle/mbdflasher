@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-11-10 09:19-0500\n"
+"POT-Creation-Date: 2023-12-18 16:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Firmware list is not up to date."
 msgstr ""
 
-#: Main.py:140 Main.py:177
+#: Main.py:140 Main.py:180
 msgid "Relaunch BrewFlasher and try again."
 msgstr ""
 
@@ -62,135 +62,135 @@ msgstr ""
 msgid "Downloaded successfully!\n"
 msgstr ""
 
-#: Main.py:177
+#: Main.py:180
 msgid "Invalid device family detected."
 msgstr ""
 
-#: Main.py:197
+#: Main.py:200
 msgid ""
 "ERROR - Cannot automatically select the serial port for this device "
 "family. Please explicitly select the correct device to continue."
 msgstr ""
 
-#: Main.py:231
+#: Main.py:234
 msgid "Invalid flash method detected. Update BrewFlasher and try again."
 msgstr ""
 
-#: Main.py:237
+#: Main.py:240
 msgid "Performing 1200 bps touch"
 msgstr ""
 
-#: Main.py:240
+#: Main.py:243
 msgid "...done"
 msgstr ""
 
-#: Main.py:244
+#: Main.py:247
 msgid "...unable to perform 1200bps touch."
 msgstr ""
 
-#: Main.py:247
+#: Main.py:250
 msgid ""
 "Make sure you have selected the correct serial port (auto-select will not"
 " work for this chip) and try again."
 msgstr ""
 
-#: Main.py:249 Main.py:278
+#: Main.py:252 Main.py:281
 msgid "Alternatively, you may need to manually set the device into 'flash' mode."
 msgstr ""
 
-#: Main.py:251 Main.py:280
+#: Main.py:254 Main.py:283
 msgid ""
 "For instructions on how to do this, check this website:\n"
 "http://www.brewflasher.com/manualflash/"
 msgstr ""
 
-#: Main.py:261 Main.py:272
+#: Main.py:264 Main.py:275
 msgid "Firmware flashing FAILED. {tool} raised an error."
 msgstr ""
 
-#: Main.py:264 Main.py:274
+#: Main.py:267 Main.py:277
 msgid "Try flashing again, or try flashing with a slower speed."
 msgstr ""
 
-#: Main.py:286
+#: Main.py:289
 msgid ""
 "Firmware successfully flashed. Reset device to switch back to normal boot"
 " mode."
 msgstr ""
 
-#: Main.py:371
+#: Main.py:374
 msgid "Connect your device"
 msgstr ""
 
-#: Main.py:373
+#: Main.py:376
 msgid ""
 "If you chose the serial port auto-select feature you might need to turn "
 "off Bluetooth"
 msgstr ""
 
-#: Main.py:377
+#: Main.py:380
 msgid "Avrdude was not found. Arduino firmware cannot be flashed."
 msgstr ""
 
-#: Main.py:378
+#: Main.py:381
 msgid ""
 "To install Avrdude, follow the instructions at "
 "https://github.com/avrdudes/avrdude/"
 msgstr ""
 
-#: Main.py:471
+#: Main.py:474
 msgid "Reload serial device list"
 msgstr ""
 
-#: Main.py:539
+#: Main.py:542
 msgid "no"
 msgstr ""
 
-#: Main.py:540
+#: Main.py:543
 msgid "yes, wipes all data"
 msgstr ""
 
-#: Main.py:542
+#: Main.py:545
 msgid "Download Firmware and Flash Controller"
 msgstr ""
 
-#: Main.py:552
+#: Main.py:555
 msgid "Serial port"
 msgstr ""
 
-#: Main.py:553
+#: Main.py:556
 msgid "Project"
 msgstr ""
 
-#: Main.py:554
+#: Main.py:557
 msgid "Device Family"
 msgstr ""
 
-#: Main.py:555
+#: Main.py:558
 msgid "Firmware"
 msgstr ""
 
-#: Main.py:556
+#: Main.py:559
 msgid "Baud rate"
 msgstr ""
 
-#: Main.py:578
+#: Main.py:581
 msgid "Erase flash"
 msgstr ""
 
-#: Main.py:579
+#: Main.py:582
 msgid "Console"
 msgstr ""
 
-#: Main.py:617
-msgid "Welcome to BrewFlasher {version}"
+#: Main.py:620
+msgid "Welcome to MBD Flasher {version}"
 msgstr ""
 
-#: Main.py:627
-msgid "Exit BrewFlasher"
+#: Main.py:630
+msgid "Exit MBD Flasher"
 msgstr ""
 
-#: Main.py:634
+#: Main.py:637
 msgid "About"
 msgstr ""
 

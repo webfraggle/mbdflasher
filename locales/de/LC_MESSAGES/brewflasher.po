@@ -146,7 +146,7 @@ msgstr "Serielle Schnittstelle"
 
 #: Main.py:553
 msgid "Project"
-msgstr "Projekt"
+msgstr "Display"
 
 #: Main.py:554
 msgid "Device Family"
@@ -170,11 +170,11 @@ msgstr "Konsole"
 
 #: Main.py:617
 msgid "Welcome to BrewFlasher {version}"
-msgstr "Willkommen zu BrewFlasher {version}"
+msgstr "Willkommen zu MBD Flasher {version}"
 
 #: Main.py:627
 msgid "Exit BrewFlasher"
-msgstr "BrewFlasher beenden"
+msgstr "MDB Flasher beenden"
 
 #: Main.py:634
 msgid "About"

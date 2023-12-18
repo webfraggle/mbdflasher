@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Arduino Leonardo",
+        "flash_method": "avrdude",
+        "id": 3,
+        "detection_family": "arduino",
+        "download_url_bootloader": "",
+        "checksum_bootloader": "",
+        "download_url_otadata": "",
+        "otadata_address": "",
+        "checksum_otadata": "",
+        "use_1200_bps_touch": false
+    },
+    {
+        "name": "Arduino Uno",
+        "flash_method": "avrdude",
+        "id": 2,
+        "detection_family": "arduino",
+        "download_url_bootloader": "",
+        "checksum_bootloader": "",
+        "download_url_otadata": "",
+        "otadata_address": "",
+        "checksum_otadata": "",
+        "use_1200_bps_touch": false
+    },
+    {
+        "name": "ESP32",
+        "flash_method": "esptool",
+        "id": 4,
+        "detection_family": "esp32",
+        "download_url_bootloader": "https://github.com/thorrak/tiltbridge/releases/download/v1.1.1/bootloader_dio_40m.bin",
+        "checksum_bootloader": "8535fd4c3fa7e541f9ff313531ccd47a8416b8a630ab2e1f010f63d085ff111c",
+        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
+        "otadata_address": "0xe000",
+        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "use_1200_bps_touch": false
+    },
+    {
+        "name": "ESP32-C3",
+        "flash_method": "esptool",
+        "id": 6,
+        "detection_family": "esp32",
+        "download_url_bootloader": "https://github.com/thorrak/brewflasher_bins/raw/main/esp32c3/bootloader_mp_se.bin",
+        "checksum_bootloader": "2bf90d2741124ebd00c41b9dc2c8bc881398258ed4bc12acdb6e758134a78363",
+        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
+        "otadata_address": "0xe000",
+        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "use_1200_bps_touch": true
+    },
+    {
+        "name": "ESP32-S2",
+        "flash_method": "esptool",
+        "id": 5,
+        "detection_family": "esp32",
+        "download_url_bootloader": "https://github.com/thorrak/brewflasher_bins/blob/main/esp32s2/bootloader_dio_80m.bin?raw=true",
+        "checksum_bootloader": "753d2194cdc5e4696c8f43b44ea425944911cf75de2f7b699bdfedb852636204",
+        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
+        "otadata_address": "0xe000",
+        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "use_1200_bps_touch": true
+    },
+    {
+        "name": "ESP32-S3",
+        "flash_method": "esptool",
+        "id": 7,
+        "detection_family": "esp32",
+        "download_url_bootloader": "https://github.com/thorrak/brewflasher_bins/raw/main/esp32s3/magnus_esp32s3_bootloader.bin",
+        "checksum_bootloader": "8c77157632c9c8d9f93aaba9b92e4e6ce7c3de1f6861aa83d20d43f38e06c206",
+        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
+        "otadata_address": "0xe000",
+        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "use_1200_bps_touch": true
+    },
+    {
+        "name": "ESP8266",
+        "flash_method": "esptool",
+        "id": 1,
+        "detection_family": "esp8266",
+        "download_url_bootloader": "",
+        "checksum_bootloader": "",
+        "download_url_otadata": "",
+        "otadata_address": "",
+        "checksum_otadata": "",
+        "use_1200_bps_touch": false
+    }
+]

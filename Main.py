@@ -24,8 +24,8 @@ from argparse import Namespace
 import gettext
 
 # Load the import & initialize the firmware_list
-import brewflasher_com_integration
-firmware_list = brewflasher_com_integration.FirmwareList()
+import modellbahndisplays_de_integration
+firmware_list = modellbahndisplays_de_integration.FirmwareList()
 
 import locale
 import platform
@@ -129,7 +129,7 @@ class RedirectText:
 # ---------------------------------------------------------------------------
 
 
-def flash_firmware_using_whatever_is_appropriate(firmware_obj: brewflasher_com_integration.Firmware, baud:str, serial_port:str, erase_before_flash:bool) -> bool:
+def flash_firmware_using_whatever_is_appropriate(firmware_obj: modellbahndisplays_de_integration.Firmware, baud:str, serial_port:str, erase_before_flash:bool) -> bool:
     # Initial checks
     if firmware_obj.family is None or firmware_obj is None:
         print(_("Must select the project, device family, and firmware to flash before flashing."))
@@ -553,7 +553,7 @@ class NodeMcuFlasher(wx.Frame):
         self.console_ctrl.SetDefaultStyle(wx.TextAttr(wx.BLUE))
 
         port_label = wx.StaticText(panel, label=_("Serial port"))
-        project_label = wx.StaticText(panel, label=_("Project") + " ")
+        project_label = wx.StaticText(panel, label=_("Display") + " ")
         device_family_label = wx.StaticText(panel, label=_("Device Family") + " ")
         firmware_label = wx.StaticText(panel, label=_("Firmware") + " ")
         baud_label = wx.StaticText(panel, label=_("Baud rate") + " ")
@@ -617,7 +617,7 @@ class NodeMcuFlasher(wx.Frame):
     def _build_status_bar(self):
         self.statusBar = self.CreateStatusBar(2, wx.STB_SIZEGRIP)
         self.statusBar.SetStatusWidths([-2, -1])
-        status_text = _("Welcome to BrewFlasher {version}").format(version=__version__)
+        status_text = _("Welcome to MBD Flasher {version}").format(version=__version__)
         self.statusBar.SetStatusText(status_text, 0)
 
     def _build_menu_bar(self):
@@ -627,14 +627,14 @@ class NodeMcuFlasher(wx.Frame):
         file_menu = wx.Menu()
         wx.App.SetMacExitMenuItemId(wx.ID_EXIT)
         # TODO - Figure out what internationalization needs to take place here
-        exit_item = file_menu.Append(wx.ID_EXIT, "E&xit\tCtrl-Q", _("Exit BrewFlasher"))
+        exit_item = file_menu.Append(wx.ID_EXIT, "E&xit\tCtrl-Q", _("Exit MBD Flasher"))
         exit_item.SetBitmap(images.Exit.GetBitmap())
         self.Bind(wx.EVT_MENU, self._on_exit_app, exit_item)
         self.menuBar.Append(file_menu, "&File")
 
         # Help menu
         help_menu = wx.Menu()
-        help_item = help_menu.Append(wx.ID_ABOUT, '&About BrewFlasher', _('About'))
+        help_item = help_menu.Append(wx.ID_ABOUT, '&About MDB Flasher', _('About'))
         self.Bind(wx.EVT_MENU, self._on_help_about, help_item)
         self.menuBar.Append(help_menu, '&Help')
 
@@ -687,7 +687,7 @@ class MySplashScreen(wx.adv.SplashScreen):
             self._show_main()
 
     def _show_main(self):
-        frame = NodeMcuFlasher(None, "BrewFlasher")
+        frame = NodeMcuFlasher(None, "MBD Flasher")
         frame.Show()
         if self.__fc.IsRunning():
             self.Raise()
@@ -699,7 +699,7 @@ class MySplashScreen(wx.adv.SplashScreen):
 class App(wx.App, wx.lib.mixins.inspection.InspectionMixin):
     def OnInit(self):
         wx.SystemOptions.SetOption("mac.window-plain-transition", 1)
-        self.SetAppName("BrewFlasher")
+        self.SetAppName("MBD Flasher")
 
         # Create and show the splash screen.  It will then create and
         # show the main frame when it is time to do so.  Normally when
