@@ -1,5 +1,10 @@
-# BrewFlasher
-![BrewFlasher Logo](images/BrewFlasher.png)
+# MDB Flasher
+modellbahn-displays.de Flash Tool based on the incredible work from BrewFlasher
+
+
+-----------------------
+
+
 
 A standalone desktop application for flashing brewing-related firmware to your ESP8266, ESP32, ESP32-C3 or ESP32-S2.
 
