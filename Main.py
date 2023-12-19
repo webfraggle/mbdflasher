@@ -373,12 +373,12 @@ class NodeMcuFlasher(wx.Frame):
         self.Show(True)
         print(_("Connect your device"))
         print("")
-        print(_("If you chose the serial port auto-select feature you might need to turn off Bluetooth"))
+        print(_("If you chose the serial port auto-select feature\nyou might need to turn off Bluetooth"))
 
-        if not check_for_avrdude():
-            print("")
-            print(_("Avrdude was not found. Arduino firmware cannot be flashed."))
-            print(_("To install Avrdude, follow the instructions at https://github.com/avrdudes/avrdude/"))
+        # if not check_for_avrdude():
+        #     print("")
+        #     print(_("Avrdude was not found. Arduino firmware cannot be flashed."))
+        #     print(_("To install Avrdude, follow the instructions at https://github.com/avrdudes/avrdude/"))
 
     def _init_ui(self):
         def on_reload(event):
