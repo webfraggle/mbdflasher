@@ -8,6 +8,10 @@ set-executionpolicy remotesigned
 
 pip install -r .\requirements.txt
 
+
+Build:
+pyinstaller .\build-on-win.spec
+
 # Brew URLs
 https://www.brewflasher.com/firmware/api/project_list/all/
 https://www.brewflasher.com/firmware/api/firmware_family_list/

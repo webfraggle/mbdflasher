@@ -37,7 +37,7 @@ class AboutDlg(wx.Dialog):
 '''
 
     def __init__(self, parent):
-        wx.Dialog.__init__(self, parent, wx.ID_ANY, "About BrewFlasher")
+        wx.Dialog.__init__(self, parent, wx.ID_ANY, "About MBD Flasher")
         html = HtmlWindow(self, wx.ID_ANY, size=(420, -1))
         if "gtk2" in wx.PlatformInfo or "gtk3" in wx.PlatformInfo:
             html.SetStandardFonts()
