@@ -164,14 +164,14 @@ class Firmware:
         }
         url = BREWFLASHER_COM_URL + "/api/flash_verify/"
         r = requests.post(url, json=request_dict)
-        print(r.text)
-        print(self.checksum)
+        # print(r.text)
+        # print(self.checksum)
         response = r.json()
         if response['status'] == "success":
             if response['message'] == self.checksum:
-                print("YO")
+                # print("YO")
                 return True
-        print("NOOOO")
+        # print("NOOOO")
         return False
 
     def remove_downloaded_firmware(self):

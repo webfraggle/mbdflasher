@@ -2,7 +2,7 @@ https://www.brewflasher.com/firmware/api/project_list/all/
 https://www.brewflasher.com/firmware/api/firmware_family_list/
 https://www.brewflasher.com/firmware/api/firmware_list/all/
 
-/api/flash_verify/ <- POST
+https://www.brewflasher.com/firmware//api/flash_verify/ <- POST
 
 request_dict = {
             'firmware_id': self.id,

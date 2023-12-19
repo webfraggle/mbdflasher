@@ -2,13 +2,13 @@
     {
         "name": "Zugzielanzeiger",
         "project_url": "https://www.modellbahn-display.de",
-        "documentation_url": "",
+        "documentation_url": "https://www.modellbahn-display.de/anleitungen",
         "support_url": "",
         "description": "Zugzielanzeiger",
-        "weight": 2,
+        "weight": 1,
         "id": 1,
         "show_in_standalone_flasher": true,
-        "supported_by_fermentrack": true,
+        "supported_by_fermentrack": false,
         "supported_by_kegscreen": false
     }
 ]
