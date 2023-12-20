@@ -429,9 +429,13 @@ class NodeMcuFlasher(wx.Frame):
             self._config.firmware_obj = None
             self.firmware_choice.SetItems([""] + firmware_list.get_firmware_list(selected_project_id=self._config.project_id))
 
+            self.device_choice.SetSelection(1);
+            on_select_device_family(None)
+
         def on_select_device_family(event):
-            choice = event.GetEventObject()
-            self._config.device_family_string = choice.GetString(choice.GetSelection())
+            # choice = event.GetEventObject()
+            # self._config.device_family_string = choice.GetString(choice.GetSelection())
+            self._config.device_family_string = self.device_choice.GetString(self.device_choice.GetSelection())
             if len(self._config.device_family_string) > 0:
                 self._config.device_family_id = firmware_list.get_device_family_id(self._config.project_id,
                                                                                    self._config.device_family_string)
@@ -549,8 +553,10 @@ class NodeMcuFlasher(wx.Frame):
         self.console_ctrl.SetFont(wx.Font((0, 13), wx.FONTFAMILY_TELETYPE, wx.FONTSTYLE_NORMAL,
                                           wx.FONTWEIGHT_NORMAL))
         self.console_ctrl.SetBackgroundColour(wx.WHITE)
-        self.console_ctrl.SetForegroundColour(wx.BLUE)
-        self.console_ctrl.SetDefaultStyle(wx.TextAttr(wx.BLUE))
+        txtColor = wx.Colour()
+        txtColor.Set(3,127,140)
+        self.console_ctrl.SetForegroundColour(txtColor)
+        self.console_ctrl.SetDefaultStyle(wx.TextAttr(txtColor))
 
         port_label = wx.StaticText(panel, label=_("Serial port"))
         project_label = wx.StaticText(panel, label=_("Display") + " ")

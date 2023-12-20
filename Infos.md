@@ -1,4 +1,7 @@
 
+# Activate on Mac
+source ./venv/bin/activate
+
 # Activate on Windows
 
 einmalig 

@@ -1,29 +1,5 @@
 [
     {
-        "name": "Arduino Leonardo",
-        "flash_method": "avrdude",
-        "id": 3,
-        "detection_family": "arduino",
-        "download_url_bootloader": "",
-        "checksum_bootloader": "",
-        "download_url_otadata": "",
-        "otadata_address": "",
-        "checksum_otadata": "",
-        "use_1200_bps_touch": false
-    },
-    {
-        "name": "Arduino Uno",
-        "flash_method": "avrdude",
-        "id": 2,
-        "detection_family": "arduino",
-        "download_url_bootloader": "",
-        "checksum_bootloader": "",
-        "download_url_otadata": "",
-        "otadata_address": "",
-        "checksum_otadata": "",
-        "use_1200_bps_touch": false
-    },
-    {
         "name": "ESP32",
         "flash_method": "esptool",
         "id": 4,
@@ -70,17 +46,5 @@
         "otadata_address": "0xe000",
         "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
         "use_1200_bps_touch": true
-    },
-    {
-        "name": "ESP8266",
-        "flash_method": "esptool",
-        "id": 1,
-        "detection_family": "esp8266",
-        "download_url_bootloader": "",
-        "checksum_bootloader": "",
-        "download_url_otadata": "",
-        "otadata_address": "",
-        "checksum_otadata": "",
-        "use_1200_bps_touch": false
     }
 ]

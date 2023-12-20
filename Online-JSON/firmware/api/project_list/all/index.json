@@ -1,12 +1,60 @@
 [
     {
-        "name": "Zugzielanzeiger",
+        "name": "Zugzielanzeiger 0.96",
         "project_url": "https://www.modellbahn-display.de",
         "documentation_url": "https://www.modellbahn-display.de/anleitungen",
         "support_url": "",
-        "description": "Zugzielanzeiger",
+        "description": "Zugzielanzeiger 0.96",
         "weight": 1,
         "id": 1,
+        "show_in_standalone_flasher": true,
+        "supported_by_fermentrack": false,
+        "supported_by_kegscreen": false
+    },
+    {
+        "name": "Zugzielanzeiger 1.14",
+        "project_url": "https://www.modellbahn-display.de",
+        "documentation_url": "https://www.modellbahn-display.de/anleitungen",
+        "support_url": "",
+        "description": "Zugzielanzeiger 1.14",
+        "weight": 2,
+        "id": 2,
+        "show_in_standalone_flasher": true,
+        "supported_by_fermentrack": false,
+        "supported_by_kegscreen": false
+    },
+    {
+        "name": "Tankstellenanzeige",
+        "project_url": "https://www.modellbahn-display.de",
+        "documentation_url": "https://www.modellbahn-display.de/anleitungen",
+        "support_url": "",
+        "description": "Tankstellenanzeige",
+        "weight": 3,
+        "id": 3,
+        "show_in_standalone_flasher": true,
+        "supported_by_fermentrack": false,
+        "supported_by_kegscreen": false
+    },
+    {
+        "name": "Werbeanzeige",
+        "project_url": "https://www.modellbahn-display.de",
+        "documentation_url": "https://www.modellbahn-display.de/anleitungen",
+        "support_url": "",
+        "description": "Werbeanzeige",
+        "weight": 4,
+        "id": 4,
+        "show_in_standalone_flasher": true,
+        "supported_by_fermentrack": false,
+        "supported_by_kegscreen": false
+    },
+    {
+        "name": "Video-Werbeanzeige",
+        "project_url": "https://www.modellbahn-display.de",
+        "documentation_url": "https://www.modellbahn-display.de/anleitungen",
+        "support_url": "",
+        "description": "Werbeanzeige",
+        "weight": 5,
+        "id": 5,
         "show_in_standalone_flasher": true,
         "supported_by_fermentrack": false,
         "supported_by_kegscreen": false
