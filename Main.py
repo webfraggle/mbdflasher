@@ -156,7 +156,7 @@ def flash_firmware_using_whatever_is_appropriate(firmware_obj: modellbahndisplay
                 "ESP32": ["esp32", "0x10000"],
                 "ESP32-S2": ["esp32s2", "-z", "--flash_mode", "dio", "--flash_freq", "80m", "0x10000"],
                 "ESP32-C3": ["esp32c3", "-z", "--flash_mode", "dio", "--flash_freq", "80m", "0x10000"],
-                "ESP32-S3": ["esp32s3", "-z", "--flash_mode", "dio", "--flash_freq", "80m", "0x10000"],
+                "ESP32-S3": ["esp32s3", "-z", "--flash_mode", "dio", "--flash_size", "keep", "--flash_freq", "80m", "0x10000"],
             }
             command_extension.extend(["--chip", flash_options[device_name][0], "--baud", str(baud),
                                       "--before", "default_reset", "--after", "hard_reset", "write_flash"])
@@ -554,7 +554,7 @@ class NodeMcuFlasher(wx.Frame):
                                           wx.FONTWEIGHT_NORMAL))
         self.console_ctrl.SetBackgroundColour(wx.WHITE)
         txtColor = wx.Colour()
-        txtColor.Set(3,127,140)
+        txtColor.Set(253,112,20)
         self.console_ctrl.SetForegroundColour(txtColor)
         self.console_ctrl.SetDefaultStyle(wx.TextAttr(txtColor))
 

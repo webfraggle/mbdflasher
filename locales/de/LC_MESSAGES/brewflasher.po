@@ -138,7 +138,7 @@ msgstr "Ja (alle Daten werden gelöscht)"
 
 #: Main.py:542
 msgid "Download Firmware and Flash Controller"
-msgstr "Firmware und Flash-Controller herunterladen"
+msgstr "Firmware herunterladen und Controller flashen"
 
 #: Main.py:552
 msgid "Serial port"

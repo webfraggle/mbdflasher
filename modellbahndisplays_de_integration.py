@@ -122,8 +122,6 @@ class Firmware:
         # If this is a multipart firmware (e.g. ESP32, with partitions or SPIFFS) then download the additional parts.
         if len(self.download_url_partitions) > 12:
             print("Downloading partitions file...")
-            print(self.full_filepath("partitions"))
-            print(self.download_url_partitions)
             if not self.download_file(self.full_filepath("partitions"), self.download_url_partitions,
                                       self.checksum_partitions, check_checksum, force_download):
                 print("Error downloading partitions file!")

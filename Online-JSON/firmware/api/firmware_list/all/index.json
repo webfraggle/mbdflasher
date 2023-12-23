@@ -25,14 +25,6 @@
         "checksum_spiffs": "a94236f6a42b567ec62be37ccb4c3d02dec4af6d3fe0e4f218750d9ed51d4629",
         "spiffs_address": "0x290000",
         
-        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/zza-quad-1.0.3/bootloader.bin",
-        "checksum_bootloader": "b2fc07bd893caf8981dc5a6cc2e070f8f1d463e283440f92e8473075bd8c2520",
-
-
-        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
-        "otadata_address": "0xe000",
-        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -61,14 +53,6 @@
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.0/littlefs.bin",
         "checksum_spiffs": "85cb8e83885e18fd3d4dfbe6ad67850a67896a798252f74386ede4e2e0185da1",
         "spiffs_address": "0x290000",
-        
-        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.0/bootloader.bin",
-        "checksum_bootloader": "2adbf7b295e6d8acf16243241081666103c300a3b0955e9e67b7bdc1e296d74a",
-
-
-        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
-        "otadata_address": "0xe000",
-        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
         
         "is_fermentrack_supported": false,
         "revision": ""
@@ -99,14 +83,6 @@
         "checksum_spiffs": "85cb8e83885e18fd3d4dfbe6ad67850a67896a798252f74386ede4e2e0185da1",
         "spiffs_address": "0x290000",
         
-        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.0/bootloader.bin",
-        "checksum_bootloader": "2adbf7b295e6d8acf16243241081666103c300a3b0955e9e67b7bdc1e296d74a",
-
-
-        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
-        "otadata_address": "0xe000",
-        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -135,14 +111,6 @@
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstelle-1.0.0/littlefs.bin",
         "checksum_spiffs": "236759ce713b8180cf410d3f066b29450c916caaadc0e70f7449875bc873e079",
         "spiffs_address": "0x290000",
-        
-        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/tankstelle-1.0.0/bootloader.bin",
-        "checksum_bootloader": "b2fc07bd893caf8981dc5a6cc2e070f8f1d463e283440f92e8473075bd8c2520",
-
-
-        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
-        "otadata_address": "0xe000",
-        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
         
         "is_fermentrack_supported": false,
         "revision": ""
@@ -173,14 +141,6 @@
         "checksum_spiffs": "29bffc904ea5b6b41b92a494be61f7d2c3d45f0e46d29489761f83b4965bedde",
         "spiffs_address": "0x290000",
         
-        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/werbe-1.14-1.0.0/bootloader.bin",
-        "checksum_bootloader": "2adbf7b295e6d8acf16243241081666103c300a3b0955e9e67b7bdc1e296d74a",
-
-
-        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
-        "otadata_address": "0xe000",
-        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -210,13 +170,63 @@
         "checksum_spiffs": "2804ad315b5b491b1fae08219f8d4e2cd872d9688176f234bd36181f027d80c1",
         "spiffs_address": "0x290000",
         
-        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/werbe-0.96-1.0.0/bootloader.bin",
-        "checksum_bootloader": "2adbf7b295e6d8acf16243241081666103c300a3b0955e9e67b7bdc1e296d74a",
-
-
-        "download_url_otadata": "https://github.com/thorrak/brewflasher_bins/blob/main/boot_app0.bin?raw=true",
-        "otadata_address": "0xe000",
-        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 7,
+        "project_id": 5,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Video-Werbedisplay 0.96",
+        "version": "1.0.0",
+        "variant": "",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/video-0.96-1.0.0/firmware.bin",
+        "checksum": "586546607dbccb20fdb3ca6a0acd20aff73f38ce96f71e29bebe98dfb417eb35",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-0.96-1.0.0/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-0.96-1.0.0/littlefs.bin",
+        "checksum_spiffs": "535df1df97dabc4cd4a66efaa0b37aa7aeecc53effdeb17acd49ce2eee0d097e",
+        "spiffs_address": "0xc90000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 8,
+        "project_id": 5,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Video-Werbedisplay 1.14",
+        "version": "1.0.0",
+        "variant": "",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/video-1.14-1.0.0/firmware.bin",
+        "checksum": "ad91486039bd70633af99092bfcfa89fbab8b50460ac93dc8272a5c8e9776826",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-1.14-1.0.0/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-1.14-1.0.0/littlefs.bin",
+        "checksum_spiffs": "6a4df1a21bdd7f05192b4cb85e6e14cbf6d0529cebac868d450d70c3be765d06",
+        "spiffs_address": "0xc90000",
         
         "is_fermentrack_supported": false,
         "revision": ""
