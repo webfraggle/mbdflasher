@@ -58,6 +58,35 @@
         "revision": ""
     },
     {
+        "id": 9,
+        "project_id": 1,
+        "family_id": 5,
+        "family_name": "ESP32-S2",
+        "name": "Zugzielanzeiger 0.96",
+        "version": "1.5.0",
+        "variant": "Einzelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.0/firmware.bin",
+        "checksum": "5f2d53ef813f57a01f88ccbd3237cb8b52f7a04f99a01b5777d28eff313f680b",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.0/partitions.bin",
+        "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.0/littlefs.bin",
+        "checksum_spiffs": "bd3916cfacefaa329d42e5a14fe1a40c393ea6f5ec0439f9267a439dfd7e7452",
+        "spiffs_address": "0x290000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
         "id": 4,
         "project_id": 3,
         "family_id": 5,
