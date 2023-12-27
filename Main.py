@@ -695,6 +695,7 @@ class MySplashScreen(wx.adv.SplashScreen):
     def _show_main(self):
         frame = NodeMcuFlasher(None, "MBD Flasher")
         frame.Show()
+        frame.Raise()
         if self.__fc.IsRunning():
             self.Raise()
 
