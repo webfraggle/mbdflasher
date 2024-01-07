@@ -15,6 +15,17 @@ pip install -r .\requirements.txt
 Build:
 pyinstaller .\build-on-win.spec
 
+
+## Pyinstaller Self-Compile
+Start cmd as admin!
+
+cd Pyinstaller
+cd bootloader
+python.exe ./waf all --target-arch=64bit
+python.exe ./waf all --target-arch=32bit
+cd ..
+C:\Users\chris\Documents\mbdflasher\venv\Scripts\pip.exe install .
+
 # Brew URLs
 https://www.brewflasher.com/firmware/api/project_list/all/
 https://www.brewflasher.com/firmware/api/firmware_family_list/
