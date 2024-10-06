@@ -317,5 +317,92 @@
         
         "is_fermentrack_supported": false,
         "revision": ""
+    },
+    {
+        "id": 13,
+        "project_id": 1,
+        "family_id": 5,
+        "family_name": "ESP32-S2",
+        "name": "Zugzielanzeiger 0.96",
+        "version": "1.6.0",
+        "variant": "Doppelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.6.0/firmware.bin",
+        "checksum": "ec86d2fb45880cd938034b3ec70410aee3a72ce818868e9c140c21d8cc341766",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.6.0/partitions.bin",
+        "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.6.0/littlefs.bin",
+        "checksum_spiffs": "8d65fc5838e6cecc1ad7765c0b1cf46fd8ef2f5f115bfc05323b35e7cfca60a8",
+        "spiffs_address": "0x290000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 14,
+        "project_id": 1,
+        "family_id": 5,
+        "family_name": "ESP32-S2",
+        "name": "Zugzielanzeiger 0.96",
+        "version": "1.6.0",
+        "variant": "Einzelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.6.0/firmware.bin",
+        "checksum": "4b6ad980ebd593806cfd4ed65c4e85f77ba436a14497512776bf41e46b78373c",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.6.0/partitions.bin",
+        "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.6.0/littlefs.bin",
+        "checksum_spiffs": "6df427da30c998cccc1d81e892ef3bcdaf207f1e8278a4fd1b2fced669ec9f72",
+        "spiffs_address": "0x290000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 15,
+        "project_id": 3,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Tankstellenanzeige Pylon H0",
+        "version": "1.0.0",
+        "variant": "",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/tankstelle-pylon-h0-1.0.0/firmware.bin",
+        "checksum": "70c260707df0af44479718b0dd9010b5551f60d7ec3d45b41d582a2d147d3439",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstelle-pylon-h0-1.0.0/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstelle-pylon-h0-1.0.0/littlefs.bin",
+        "checksum_spiffs": "b7d4645ad1a1bd24fd32c8475b7f690db198176a27738c42e01479e026006b7a",
+        "spiffs_address": "0xc90000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
     }
 ]
