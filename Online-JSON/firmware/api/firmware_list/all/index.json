@@ -404,5 +404,121 @@
         
         "is_fermentrack_supported": false,
         "revision": ""
+    },
+    {
+        "id": 16,
+        "project_id": 5,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Video 1.14 for Universal Display Controller",
+        "version": "2.0.0",
+        "variant": "",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.0/firmware.bin",
+        "checksum": "5c754ca9a1f75ef32afe239f35f8fd9513b466db7603f5ad56acfa3530426bdb",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.0/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.0/littlefs.bin",
+        "checksum_spiffs": "e9894208ed43a461b871365fce5432d63216c2c4b800c07a6868c44f345de729",
+        "spiffs_address": "0xc90000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 17,
+        "project_id": 5,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Video 1.05 for Universal Display Controller",
+        "version": "2.0.0",
+        "variant": "",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.0/firmware.bin",
+        "checksum": "7c0500f2a9e5152b3350b75651706d0ba2f97ea599155e1f4c8c63dcb3479a04",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.0/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.0/littlefs.bin",
+        "checksum_spiffs": "52f7d0cb7c9b1a5f33d5c219ff9d840d366fbbffd5ff98a489b09aebd1926278",
+        "spiffs_address": "0xc90000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 18,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "2.0.0",
+        "variant": "Doppelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-2.0.0/firmware.bin",
+        "checksum": "baec21fd5821ba2df47b2eb78ec4f59f78f0cab249cd0366b93fd5b5598aa900",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-2.0.0/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-2.0.0/littlefs.bin",
+        "checksum_spiffs": "3081085bc16b5023e4c72541d446b2e49aae916388976c22f0710503beb00456",
+        "spiffs_address": "0xc90000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 19,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "2.0.0",
+        "variant": "Einzelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-2.0.0/firmware.bin",
+        "checksum": "c36439992812c55a392a003b0023ecbe5a4e3bd2195e175978f2b0cc37a2a637",
+        "post_install_instructions": "",
+        
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-2.0.0/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-2.0.0/littlefs.bin",
+        "checksum_spiffs": "e65a5c2e50ec7106589c8b9a0533c1a01164d81b1f5ad630ca603293cdf1ab32",
+        "spiffs_address": "0xc90000",
+        
+        "is_fermentrack_supported": false,
+        "revision": ""
     }
 ]

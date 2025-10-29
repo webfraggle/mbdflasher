@@ -1,10 +1,10 @@
 [
     {
-        "name": "Zugzielanzeiger 0.96",
+        "name": "Zugzielanzeiger",
         "project_url": "https://www.modellbahn-display.de",
         "documentation_url": "https://www.modellbahn-display.de/anleitungen",
         "support_url": "",
-        "description": "Zugzielanzeiger 0.96",
+        "description": "Zugzielanzeiger",
         "weight": 1,
         "id": 1,
         "show_in_standalone_flasher": true,
