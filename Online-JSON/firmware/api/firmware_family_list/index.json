@@ -24,24 +24,24 @@
         "use_1200_bps_touch": true
     },
     {
-        "name": "ESP32-S2",
-        "flash_method": "esptool",
-        "id": 5,
-        "detection_family": "esp32",
-        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/bootloader/s2/bootloader.bin",
-        "checksum_bootloader": "2adbf7b295e6d8acf16243241081666103c300a3b0955e9e67b7bdc1e296d74a",
-        "download_url_otadata": "https://www.modellbahn-displays.de/firmware/bootloader/boot_app0.bin",
-        "otadata_address": "0xe000",
-        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
-        "use_1200_bps_touch": true
-    },
-    {
         "name": "ESP32-S3",
         "flash_method": "esptool",
         "id": 7,
         "detection_family": "esp32",
         "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/bootloader/s3/bootloader.bin",
         "checksum_bootloader": "d0b02b860147ace6a607985a3123a977b9451fa5d54a24ca6db59be4a2e4c345",
+        "download_url_otadata": "https://www.modellbahn-displays.de/firmware/bootloader/boot_app0.bin",
+        "otadata_address": "0xe000",
+        "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "use_1200_bps_touch": true
+    },
+    {
+        "name": "ESP32-S2",
+        "flash_method": "esptool",
+        "id": 5,
+        "detection_family": "esp32",
+        "download_url_bootloader": "https://www.modellbahn-displays.de/firmware/bootloader/s2/bootloader.bin",
+        "checksum_bootloader": "2adbf7b295e6d8acf16243241081666103c300a3b0955e9e67b7bdc1e296d74a",
         "download_url_otadata": "https://www.modellbahn-displays.de/firmware/bootloader/boot_app0.bin",
         "otadata_address": "0xe000",
         "checksum_otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
