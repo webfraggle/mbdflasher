@@ -13,18 +13,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.0.3/firmware.bin",
         "checksum": "1a4f36860a7a866a8143e69ad57c1d7d5a321774e3021cc18ca96bf1a66432b8",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.0.3/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.0.3/littlefs.bin",
         "checksum_spiffs": "a94236f6a42b567ec62be37ccb4c3d02dec4af6d3fe0e4f218750d9ed51d4629",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -42,18 +38,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.0/firmware.bin",
         "checksum": "d7eb82f8acea72051368922a6ea86d6ddd7e2e21389df43711f7419b23007875",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.0/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.0/littlefs.bin",
         "checksum_spiffs": "85cb8e83885e18fd3d4dfbe6ad67850a67896a798252f74386ede4e2e0185da1",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -71,18 +63,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/tankstelle-1.0.0/firmware.bin",
         "checksum": "00432907294dc36621dca3c7d34985a6810b01a58c629ccc586dde00e585bc01",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstelle-1.0.0/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstelle-1.0.0/littlefs.bin",
         "checksum_spiffs": "236759ce713b8180cf410d3f066b29450c916caaadc0e70f7449875bc873e079",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -100,18 +88,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/werbe-1.14-1.0.0/firmware.bin",
         "checksum": "df7aa9a44df1f5790ae69efdaafc2ee57b8b53b5fcddac5965b3355e1bce1167",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/werbe-1.14-1.0.0/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/werbe-1.14-1.0.0/littlefs.bin",
         "checksum_spiffs": "29bffc904ea5b6b41b92a494be61f7d2c3d45f0e46d29489761f83b4965bedde",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -129,18 +113,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/werbe-0.96-1.0.0/firmware.bin",
         "checksum": "cf5a5495a89fdd97ca59fd7892754139642ff0a5f0af4b4ceecb422a9ab0179c",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/werbe-0.96-1.0.0/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/werbe-0.96-1.0.0/littlefs.bin",
         "checksum_spiffs": "2804ad315b5b491b1fae08219f8d4e2cd872d9688176f234bd36181f027d80c1",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -158,18 +138,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/video-0.96-1.0.0/firmware.bin",
         "checksum": "586546607dbccb20fdb3ca6a0acd20aff73f38ce96f71e29bebe98dfb417eb35",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-0.96-1.0.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-0.96-1.0.0/littlefs.bin",
         "checksum_spiffs": "535df1df97dabc4cd4a66efaa0b37aa7aeecc53effdeb17acd49ce2eee0d097e",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -187,18 +163,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/video-1.14-1.0.0/firmware.bin",
         "checksum": "ad91486039bd70633af99092bfcfa89fbab8b50460ac93dc8272a5c8e9776826",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-1.14-1.0.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-1.14-1.0.0/littlefs.bin",
         "checksum_spiffs": "6a4df1a21bdd7f05192b4cb85e6e14cbf6d0529cebac868d450d70c3be765d06",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -216,18 +188,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.0/firmware.bin",
         "checksum": "5f2d53ef813f57a01f88ccbd3237cb8b52f7a04f99a01b5777d28eff313f680b",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.0/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.0/littlefs.bin",
         "checksum_spiffs": "bd3916cfacefaa329d42e5a14fe1a40c393ea6f5ec0439f9267a439dfd7e7452",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -245,18 +213,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.1/firmware.bin",
         "checksum": "bafbd597eba048fdbb6db491e7a58175081eb0f931212d8d019e71a88b405a28",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.1/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.5.1/littlefs.bin",
         "checksum_spiffs": "321532efc4a2289d20feb683293578f0a879a5a5ba7e7693e153002dad99ff7e",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -274,18 +238,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.1/firmware.bin",
         "checksum": "8061e65e6a8ff000202aaf852ed3c7b0b9f039650e26d05915534dacba0ede03",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.1/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.5.1/littlefs.bin",
         "checksum_spiffs": "ce0394f3233b9dabe4515200c1b7835e4b28de96d0f03940be317edc6091d743",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -303,18 +263,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/tankstelle-spur-n-1.0.0/firmware.bin",
         "checksum": "bbd2789332aebbc891b3ed22772278814da82e2cbc6f85fd9dab774f863325cf",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstelle-spur-n-1.0.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstelle-spur-n-1.0.0/littlefs.bin",
         "checksum_spiffs": "1fc182751dd3f70647429210f51f112fae699ca68d915730531088a481d31882",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -332,18 +288,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.6.0/firmware.bin",
         "checksum": "ec86d2fb45880cd938034b3ec70410aee3a72ce818868e9c140c21d8cc341766",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.6.0/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-quad-1.6.0/littlefs.bin",
         "checksum_spiffs": "8d65fc5838e6cecc1ad7765c0b1cf46fd8ef2f5f115bfc05323b35e7cfca60a8",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -361,18 +313,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.6.0/firmware.bin",
         "checksum": "4b6ad980ebd593806cfd4ed65c4e85f77ba436a14497512776bf41e46b78373c",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.6.0/partitions.bin",
         "checksum_partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-0.96-dual-1.6.0/littlefs.bin",
         "checksum_spiffs": "6df427da30c998cccc1d81e892ef3bcdaf207f1e8278a4fd1b2fced669ec9f72",
         "spiffs_address": "0x290000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -390,18 +338,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/tankstelle-pylon-h0-1.0.0/firmware.bin",
         "checksum": "70c260707df0af44479718b0dd9010b5551f60d7ec3d45b41d582a2d147d3439",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstelle-pylon-h0-1.0.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstelle-pylon-h0-1.0.0/littlefs.bin",
         "checksum_spiffs": "b7d4645ad1a1bd24fd32c8475b7f690db198176a27738c42e01479e026006b7a",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -419,18 +363,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.0/firmware.bin",
         "checksum": "5c754ca9a1f75ef32afe239f35f8fd9513b466db7603f5ad56acfa3530426bdb",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.0/littlefs.bin",
         "checksum_spiffs": "e9894208ed43a461b871365fce5432d63216c2c4b800c07a6868c44f345de729",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -448,18 +388,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.0/firmware.bin",
         "checksum": "7c0500f2a9e5152b3350b75651706d0ba2f97ea599155e1f4c8c63dcb3479a04",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.0/littlefs.bin",
         "checksum_spiffs": "52f7d0cb7c9b1a5f33d5c219ff9d840d366fbbffd5ff98a489b09aebd1926278",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -477,18 +413,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-2.0.0/firmware.bin",
         "checksum": "baec21fd5821ba2df47b2eb78ec4f59f78f0cab249cd0366b93fd5b5598aa900",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-2.0.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-2.0.0/littlefs.bin",
         "checksum_spiffs": "3081085bc16b5023e4c72541d446b2e49aae916388976c22f0710503beb00456",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -506,18 +438,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-2.0.0/firmware.bin",
         "checksum": "c36439992812c55a392a003b0023ecbe5a4e3bd2195e175978f2b0cc37a2a637",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-2.0.0/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-2.0.0/littlefs.bin",
         "checksum_spiffs": "e65a5c2e50ec7106589c8b9a0533c1a01164d81b1f5ad630ca603293cdf1ab32",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -535,18 +463,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.1/firmware.bin",
         "checksum": "5ed2274b61ba512311ddbbd4e1bb18e38ffc6c6cd92b06b11637f18bb80d93b9",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.1/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-universal-1.14-2.1/littlefs.bin",
         "checksum_spiffs": "5e56b822ed94a974f38c2356b2b7776291d0e748c996ec7008858c61f71f6530",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -564,18 +488,14 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.1/firmware.bin",
         "checksum": "d871e83bc8b29425a10a259d3bc6c06afacd123f5f3b25e8f7cffa674752307b",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.1/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-universal-1.05-2.1/littlefs.bin",
         "checksum_spiffs": "8c12b26565677f06418ffc07ef1058bd9e4a0ed8033d7ecc7841b9ef5dbeafe0",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
@@ -593,505 +513,315 @@
         "project_url": "https://www.modellbahn-displays.de",
         "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
         "weight": 9,
-        
         "download_url": "https://www.modellbahn-displays.de/firmware/video-universal-0.96-2.1/firmware.bin",
         "checksum": "4a6b4025a2600074b32c7b9443480d848314502a230ae75df9adf10d084c9114",
         "post_install_instructions": "",
-        
         "download_url_partitions": "https://www.modellbahn-displays.de/firmware/video-universal-0.96-2.1/partitions.bin",
         "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-        
         "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/video-universal-0.96-2.1/littlefs.bin",
         "checksum_spiffs": "68022660b10342fbf66e8c9b8df60b0cf310bdc0a5f6870de0cd687b3f7074ba",
         "spiffs_address": "0xc90000",
-        
         "is_fermentrack_supported": false,
         "revision": ""
     },
     {
-    "id": 1773689741,
-    "project_id": 1,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Zugzielanzeiger 1.05",
-    "version": "3.0.3-beta",
-    "variant": "Doppelgleis",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.3-beta/firmware.bin",
-    "checksum": "2b34c2f37cf974f3c41d549a45331f4ceb40f0b0bf779e795e0a75bc6649d35f",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.3-beta/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.3-beta/littlefs.bin",
-    "checksum_spiffs": "d56dee3d7e3b5771b5f2ad8b4adf7f05b741a97742b762969453114644220466",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-{
-    "id": 1773777459,
-    "project_id": 1,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Zugzielanzeiger 1.05",
-    "version": "3.0.3-beta",
-    "variant": "Einzelgleis",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.3-beta/firmware.bin",
-    "checksum": "80eac1330128b13410e16cd9029a6905942c371d4df4b221207ba711500a2f41",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.3-beta/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.3-beta/littlefs.bin",
-    "checksum_spiffs": "25d37d9a0bcae4406dd11cbfe57d0d37556a1aa4de43d08c72467265f44c8316",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-{
-    "id": 1774037190,
-    "project_id": 1,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Zugzielanzeiger 1.05",
-    "version": "3.0.5-beta",
-    "variant": "Doppelgleis",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5-beta/firmware.bin",
-    "checksum": "45fa0f35f7b4499f4e176718203461a73a87572b7e8ae8d69f568c5deeba0568",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5-beta/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5-beta/littlefs.bin",
-    "checksum_spiffs": "d2555b443962ec6f7334142c5d3887dc106eddee15c7a9ce0a0eff424df47a1e",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-{
-    "id": 1774037196,
-    "project_id": 1,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Zugzielanzeiger 1.05",
-    "version": "3.0.5-beta",
-    "variant": "Einzelgleis",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5-beta/firmware.bin",
-    "checksum": "b607dfc9375b52ca1e788d9f1405ec8fc744ae9739bdd49a0291e160b51e37d3",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5-beta/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5-beta/littlefs.bin",
-    "checksum_spiffs": "958fa9c60ef80f707d541b3919c2115dfcd538fe44fc993c230874321f4530a0",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-{
-    "id": 1774084169,
-    "project_id": 1,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Zugzielanzeiger 1.05",
-    "version": "3.0.5",
-    "variant": "Doppelgleis",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5/firmware.bin",
-    "checksum": "3b8e7ce66c148cd58d414373ec8922bcb842a43f40101b20ad43002ea65381dd",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5/littlefs.bin",
-    "checksum_spiffs": "bc517c9d8cc39d53720aba8a6934c81418017606c0bcc0a0f08876c57b17feef",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-{
-    "id": 1774084178,
-    "project_id": 1,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Zugzielanzeiger 1.05",
-    "version": "3.0.5",
-    "variant": "Einzelgleis",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5/firmware.bin",
-    "checksum": "20909fa4bbff1288cdad6a0581eed2d20aa226a022b2a449d674dd21d2da3cc3",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5/littlefs.bin",
-    "checksum_spiffs": "f24b9be5a2c3d21ed7418ceab322a4bde1e953fef93c15b8060cc496e870b058",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-
-{
-    "id": 1774804547,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur H0 - 1.0.3",
-    "version": "1.0.3",
-    "variant": "Universal",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-1.0.3/firmware.bin",
-    "checksum": "80937b8061ef86194a8b2d5dbb9555e5cb7829d02a3e46d62bdef93c0f6e9558",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-1.0.3/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-1.0.3/littlefs.bin",
-    "checksum_spiffs": "328934d17143c5afde4ea1b8e94e8da1c0e0ba7c5cdeb367c2490c146b2d5fcb",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-
-{
-    "id": 1774804558,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur N - 1.0.3",
-    "version": "1.0.3",
-    "variant": "Universal",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-1.0.3/firmware.bin",
-    "checksum": "8100be9e53ffc5f24a421d470d150031123adc057050c7f0e9e534f0da3f80b0",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-1.0.3/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-1.0.3/littlefs.bin",
-    "checksum_spiffs": "86bc23afe77a2c0ce42c45938145ef23ba146ad6eba6f69476e5c291bd7a9b45",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-},
-
-{
-    "id": 1775644647,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur H0",
-    "version": "2.0.2",
-    "variant": "S3Pro",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.2/firmware.bin",
-    "checksum": "600d4561c1a5752cce3d4186511225a611f7bfec79eead7c07e3693beab49d60",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.2/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.2/littlefs.bin",
-    "checksum_spiffs": "41a2e3e07dbf1953e32bcce0718f5cfbb4fdd6167b171ffc13b8f14b9a660911",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-,
-{
-    "id": 1775644610,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur H0",
-    "version": "2.0.2",
-    "variant": "Universal",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.2/firmware.bin",
-    "checksum": "1a826b9bbace6360b98a1007920dcc5a927b9fe21c050d5390a3a25231a99d35",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.2/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.2/littlefs.bin",
-    "checksum_spiffs": "38ec689a0ecf21feed46751de3f572b75e7f83929e610fb46e5187ee3b3e4529",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-,
-{
-    "id": 1775644666,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur N",
-    "version": "2.0.2",
-    "variant": "S3Pro",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.2/firmware.bin",
-    "checksum": "88181da32f0189757d05a48eade0278169c1e3f7038a1f1fe464495b110dc869",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.2/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.2/littlefs.bin",
-    "checksum_spiffs": "fb9f7182b04822c7dabfdc142f760a0b7bd3e1ebdcf0f7191c9e2a494a19fa39",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-,
-{
-    "id": 1775644628,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur N",
-    "version": "2.0.2",
-    "variant": "Universal",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.2/firmware.bin",
-    "checksum": "339ac3f3e11eebc14c128487c3aaf5586b422e3a9df61b80ac4412e7222a3b6b",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.2/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.2/littlefs.bin",
-    "checksum_spiffs": "d3cebf5dec372c70d1f2adffbc17b443bb200cc703c665319a2ce9f91c06edf9",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-,
-{
-    "id": 1775848631,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur H0",
-    "version": "2.0.4",
-    "variant": "S3Pro",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.4/firmware.bin",
-    "checksum": "77b92f7c87774b0936b42a23c0f842bb0058d30588986986aca2c7c40e76739b",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.4/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.4/littlefs.bin",
-    "checksum_spiffs": "d2ce883dc904cccc57fe767650205ba2098a62da7e19e008f04c5d60958c0e72",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-,
-{
-    "id": 1775848613,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur H0",
-    "version": "2.0.4",
-    "variant": "Universal",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.4/firmware.bin",
-    "checksum": "9d66358abfe95591650c7bb18f1755b506344febf3fc113474669c673c09aeb4",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.4/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.4/littlefs.bin",
-    "checksum_spiffs": "590e2a8f1690c4afc92985e02ab8947715ceb12f98d05de1e54ab354f98560da",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-,
-{
-    "id": 1775848639,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur N",
-    "version": "2.0.4",
-    "variant": "S3Pro",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.4/firmware.bin",
-    "checksum": "c291d4e7ca308e4f3e864849f931df3eebfe04f918e6842c42dc3c90b0a5895e",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.4/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.4/littlefs.bin",
-    "checksum_spiffs": "abf5648c47709cb7882c2e41624fcb628332febd379f45bcb97cd5ff52dc795c",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-,
-{
-    "id": 1775848622,
-    "project_id": 3,
-    "family_id": 7,
-    "family_name": "ESP32-S3",
-    "name": "Tankstellenanzeige Spur N",
-    "version": "2.0.4",
-    "variant": "Universal",
-    "in_error": false,
-    "description": "",
-    "variant_description": "",
-    "project_url": "https://www.modellbahn-displays.de",
-    "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
-    "weight": 9,
-
-    "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.4/firmware.bin",
-    "checksum": "3a32fbb74f91605c109e970e0324eda3b973befdd41b3f172464f09a26e586ad",
-    "post_install_instructions": "",
-
-    "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.4/partitions.bin",
-    "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
-
-    "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.4/littlefs.bin",
-    "checksum_spiffs": "9a567973e7145d4228fc34bfd326167be057b61ff1f3ba374dca0219ee37c928",
-    "spiffs_address": "0xc90000",
-
-    "is_fermentrack_supported": false,
-    "revision": ""
-}
-
-
-
-
-
-
-
-
-
-
-
-
+        "id": 1773689741,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "3.0.3-beta",
+        "variant": "Doppelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.3-beta/firmware.bin",
+        "checksum": "2b34c2f37cf974f3c41d549a45331f4ceb40f0b0bf779e795e0a75bc6649d35f",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.3-beta/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.3-beta/littlefs.bin",
+        "checksum_spiffs": "d56dee3d7e3b5771b5f2ad8b4adf7f05b741a97742b762969453114644220466",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1773777459,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "3.0.3-beta",
+        "variant": "Einzelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.3-beta/firmware.bin",
+        "checksum": "80eac1330128b13410e16cd9029a6905942c371d4df4b221207ba711500a2f41",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.3-beta/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.3-beta/littlefs.bin",
+        "checksum_spiffs": "25d37d9a0bcae4406dd11cbfe57d0d37556a1aa4de43d08c72467265f44c8316",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1774037190,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "3.0.5-beta",
+        "variant": "Doppelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5-beta/firmware.bin",
+        "checksum": "45fa0f35f7b4499f4e176718203461a73a87572b7e8ae8d69f568c5deeba0568",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5-beta/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5-beta/littlefs.bin",
+        "checksum_spiffs": "d2555b443962ec6f7334142c5d3887dc106eddee15c7a9ce0a0eff424df47a1e",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1774037196,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "3.0.5-beta",
+        "variant": "Einzelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5-beta/firmware.bin",
+        "checksum": "b607dfc9375b52ca1e788d9f1405ec8fc744ae9739bdd49a0291e160b51e37d3",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5-beta/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5-beta/littlefs.bin",
+        "checksum_spiffs": "958fa9c60ef80f707d541b3919c2115dfcd538fe44fc993c230874321f4530a0",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1774084169,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "3.0.5",
+        "variant": "Doppelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5/firmware.bin",
+        "checksum": "3b8e7ce66c148cd58d414373ec8922bcb842a43f40101b20ad43002ea65381dd",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-quad-3.0.5/littlefs.bin",
+        "checksum_spiffs": "bc517c9d8cc39d53720aba8a6934c81418017606c0bcc0a0f08876c57b17feef",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1774084178,
+        "project_id": 1,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Zugzielanzeiger 1.05",
+        "version": "3.0.5",
+        "variant": "Einzelgleis",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5/firmware.bin",
+        "checksum": "20909fa4bbff1288cdad6a0581eed2d20aa226a022b2a449d674dd21d2da3cc3",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/zza-universal-1.05-dual-3.0.5/littlefs.bin",
+        "checksum_spiffs": "f24b9be5a2c3d21ed7418ceab322a4bde1e953fef93c15b8060cc496e870b058",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1774804547,
+        "project_id": 3,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Tankstellenanzeige Spur H0 - 1.0.3",
+        "version": "1.0.3",
+        "variant": "Universal",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-1.0.3/firmware.bin",
+        "checksum": "80937b8061ef86194a8b2d5dbb9555e5cb7829d02a3e46d62bdef93c0f6e9558",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-1.0.3/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-1.0.3/littlefs.bin",
+        "checksum_spiffs": "328934d17143c5afde4ea1b8e94e8da1c0e0ba7c5cdeb367c2490c146b2d5fcb",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1774804558,
+        "project_id": 3,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Tankstellenanzeige Spur N - 1.0.3",
+        "version": "1.0.3",
+        "variant": "Universal",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-1.0.3/firmware.bin",
+        "checksum": "8100be9e53ffc5f24a421d470d150031123adc057050c7f0e9e534f0da3f80b0",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-1.0.3/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-1.0.3/littlefs.bin",
+        "checksum_spiffs": "86bc23afe77a2c0ce42c45938145ef23ba146ad6eba6f69476e5c291bd7a9b45",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1775849954,
+        "project_id": 3,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Tankstellenanzeige Spur H0",
+        "version": "2.0.5",
+        "variant": "Universal",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.5/firmware.bin",
+        "checksum": "dddcf2d45d86187c4a8c5daa81fd5eb0c105a93d14b4f655d7af37780f17d4a5",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.5/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-universal-2.0.5/littlefs.bin",
+        "checksum_spiffs": "2a0d4588a7bbcd971d881c67b683a2c5fc30e2701729c42faf3f34a0e80807d2",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1775849963,
+        "project_id": 3,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Tankstellenanzeige Spur N",
+        "version": "2.0.5",
+        "variant": "Universal",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.5/firmware.bin",
+        "checksum": "ef9d7dee2c35e6184d78c3cdcf4f907e823e499586658da9f73924467d05d81d",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.5/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-universal-2.0.5/littlefs.bin",
+        "checksum_spiffs": "911460fde1b5957612216e8f5dd2a0a7e218dbfcd987789ea2c27b23d49df2f3",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1775849972,
+        "project_id": 3,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Tankstellenanzeige Spur H0",
+        "version": "2.0.5",
+        "variant": "S3Pro",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.5/firmware.bin",
+        "checksum": "4d7f2ba51e6e357ccd60f5a56ad843456471885859430813bf1f77d0e7506986",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.5/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-h0-s3pro-2.0.5/littlefs.bin",
+        "checksum_spiffs": "498c3c01bd1ed634446a83cb37655ff4b538ab9d830153ed9eab644178f6becc",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    },
+    {
+        "id": 1775849981,
+        "project_id": 3,
+        "family_id": 7,
+        "family_name": "ESP32-S3",
+        "name": "Tankstellenanzeige Spur N",
+        "version": "2.0.5",
+        "variant": "S3Pro",
+        "in_error": false,
+        "description": "",
+        "variant_description": "",
+        "project_url": "https://www.modellbahn-displays.de",
+        "documentation_url": "https://www.modellbahn-displays.de/anleitungen/",
+        "weight": 9,
+        "download_url": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.5/firmware.bin",
+        "checksum": "dd6cbc009737d7ddd256ebc59ca240b0bb29b706a27a79f0954020d141604d76",
+        "post_install_instructions": "",
+        "download_url_partitions": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.5/partitions.bin",
+        "checksum_partitions": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+        "download_url_spiffs": "https://www.modellbahn-displays.de/firmware/tankstellenanzeige-n-s3pro-2.0.5/littlefs.bin",
+        "checksum_spiffs": "1133a55d7a0261ee1cf7149a2fc4379b791dec02003892906cff09f641fc9e96",
+        "spiffs_address": "0xc90000",
+        "is_fermentrack_supported": false,
+        "revision": ""
+    }
 ]
