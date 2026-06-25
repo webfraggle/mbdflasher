@@ -1,1 +1,13 @@
 DirectoryIndex index.json index.html index.htm index.html index.php
+
+# CORS: erlaube Cross-Origin-Zugriff auf den Firmware-List-Endpunkt und auf
+# die Firmware-Binaries (*.bin) in den Versions-Unterverzeichnissen.
+# Greift dank .htaccess-Vererbung auch in allen Unterordnern.
+<IfModule mod_headers.c>
+    <Files "list.php">
+        Header always set Access-Control-Allow-Origin "*"
+    </Files>
+    <FilesMatch "\.bin$">
+        Header always set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
