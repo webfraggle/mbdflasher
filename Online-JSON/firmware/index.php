@@ -1,9 +1,9 @@
 <?php
 // Firmware Download Page for modellbahn-displays.de
-
-$jsonPath = __DIR__ . '/api/firmware_list/all/index.json';
-$json = file_get_contents($jsonPath);
-$firmwares = json_decode($json, true);
+//
+// Every firmware directory next to this script that contains both
+// <dir>/<dir>.zip and <dir>/device.json is listed. device.json has the
+// same format as an entry of api/firmware_list/all/index.json.
 
 // Only show these project IDs
 $allowedProjects = [1, 3, 5];
@@ -43,14 +43,6 @@ function findProductImage($projectSlug, $level1Slug, $level2Slug) {
                 return $rel;
             }
         }
-    }
-    return null;
-}
-
-// Extract firmware directory from download_url
-function getFirmwareDir($downloadUrl) {
-    if (preg_match('#/firmware/([^/]+)/firmware\.bin$#', $downloadUrl, $m)) {
-        return $m[1];
     }
     return null;
 }
@@ -165,58 +157,28 @@ function groupingFor($fw, $dir, $projectNames) {
     return [$l1, $l1, $l2, $l2, $fw['name']];
 }
 
-// Build a pseudo firmware entry for a ZZA beta directory that is not listed
-// in the JSON, e.g. zza-universal-1.05-quad-3.2.11-beta. Family and variant
-// follow the conventions of the JSON entries (1.05 -> ESP32-S3,
-// 0.96 -> ESP32-S2, quad -> Doppelgleis, dual -> Einzelgleis).
-function zzaBetaFirmware($dir) {
-    if (!preg_match('/^zza-(?:[a-z0-9]+-)?(\d\.\d{2})-(quad|dual)-(\d+(?:\.\d+)*-beta)$/', $dir, $m)) {
-        return null;
-    }
-    return [
-        'name'         => 'Zugzielanzeiger ' . $m[1],
-        'project_id'   => 1,
-        'family_name'  => $m[1] === '0.96' ? 'ESP32-S2' : 'ESP32-S3',
-        'variant'      => $m[2] === 'quad' ? 'Doppelgleis' : 'Einzelgleis',
-        'version'      => $m[3],
-        'download_url' => 'https://www.modellbahn-displays.de/firmware/' . $dir . '/firmware.bin',
-    ];
-}
-
-// Add ZZA beta directories that are not part of the JSON catalog.
-$knownDirs = [];
-foreach ($firmwares as $fw) {
-    $knownDirs[getFirmwareDir($fw['download_url'])] = true;
-}
-foreach (glob(__DIR__ . '/zza-*-beta', GLOB_ONLYDIR) as $path) {
-    $dir = basename($path);
-    if (isset($knownDirs[$dir])) {
-        continue;
-    }
-    $fw = zzaBetaFirmware($dir);
-    if ($fw) {
-        $firmwares[] = $fw;
-    }
-}
-
 // Build grouped structure:
 //   project_id -> level1 -> ['label','sort','level2' => level2 -> ['label','sort','entries']]
 $grouped = [];
 
-foreach ($firmwares as $fw) {
-    if (!in_array($fw['project_id'], $allowedProjects)) {
+foreach (glob(__DIR__ . '/*', GLOB_ONLYDIR) as $path) {
+    $dir = basename($path);
+
+    if (!is_file($path . '/' . $dir . '.zip')) {
         continue;
     }
 
-    $dir = getFirmwareDir($fw['download_url']);
-    if (!$dir) {
+    $raw = @file_get_contents($path . '/device.json');
+    $fw = $raw === false ? null : json_decode($raw, true);
+    if (!is_array($fw) || !isset($fw['project_id'], $fw['version'])) {
+        // Missing or broken device.json -> skip this directory.
         continue;
     }
 
-    $zipPath = __DIR__ . '/' . $dir . '/' . $dir . '.zip';
-    if (!file_exists($zipPath)) {
+    if (!in_array($fw['project_id'], $allowedProjects, true)) {
         continue;
     }
+    $fw += ['name' => '', 'family_name' => '', 'variant' => ''];
 
     $pid = $fw['project_id'];
     [$l1label, $l1sort, $l2label, $l2sort, $rowTitle] = groupingFor($fw, $dir, $projectNames);

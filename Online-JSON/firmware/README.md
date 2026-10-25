@@ -4,32 +4,35 @@ Die `index.php` generiert eine öffentliche Download-Seite für Firmware-ZIPs.
 
 ## Datenquelle
 
-Liest `api/firmware_list/all/index.json` direkt vom Dateisystem. Angezeigt werden nur:
+Die Seite ist **unabhängig von der `index.json`**. Sie durchsucht alle Unterverzeichnisse von `firmware/`. Ein Verzeichnis wird angezeigt, wenn es **beides** enthält:
+
+- eine ZIP mit dem Namen des Verzeichnisses (`<verzeichnis>/<verzeichnis>.zip`)
+- eine `device.json` (gleiches Format wie ein Eintrag der `index.json`)
+
+```
+firmware/
+  zza-105quad-universal-3.2.12-beta/
+    firmware.bin
+    partitions.bin
+    littlefs.bin
+    device.json                              <-- Metadaten (Projekt, Familie, Variante, Version …)
+    zza-105quad-universal-3.2.12-beta.zip    <-- diese Datei wird verlinkt
+```
+
+Fehlt eine der beiden Dateien oder ist die `device.json` fehlerhaft, erscheint der Eintrag nicht. **Ausblenden einer Version = ZIP löschen.**
+
+Angezeigt werden nur:
 
 - **Project ID 1** — Zugzielanzeiger
 - **Project ID 3** — Tankstellenanzeige
 - **Project ID 5** — Video-Werbeanzeige
 
-Alle Versionen werden angezeigt (neueste zuerst). Die Gruppierung ist projektabhängig:
+## Gruppierung
 
-- **Tankstelle & Video** — Projekt → **Controller** (`Universal`, `S3Pro`) → **Display** (`Spur H0`/`Spur N` bzw. `0,96"`/`1,05"`/`1,14"`). Controller und Display werden aus dem Verzeichnisnamen nach dem Schema `project-display-controller-version` ermittelt (mit Fallback für Altverzeichnisse). Jede Download-Zeile trägt die komplette Kombination Titel · Controller · Display · Version.
-- **Zugzielanzeiger** — unverändert: Projekt → **Gerätefamilie** (ESP32-S2/S3) → **Variante** (Doppelgleis/Einzelgleis).
+Alle Versionen werden angezeigt (neueste zuerst; eine `-beta` gilt als älter als dieselbe Version ohne `-beta`: `3.2.12` > `3.2.12-beta` > `3.2.11`). Die Gruppierung ist projektabhängig:
 
-### Beta-Versionen (ZZA)
-
-Zusätzlich zur JSON werden ZZA-Verzeichnisse nach dem Schema `zza-universal-1.05-quad-3.2.11-beta` (bzw. `zza-0.96-dual-…-beta`) automatisch erkannt, auch wenn sie **nicht** in der `index.json` stehen. Familie und Variante werden aus dem Namen abgeleitet: `1.05` → ESP32-S3, `0.96` → ESP32-S2, `quad` → Doppelgleis, `dual` → Einzelgleis. Auch hier gilt: ohne ZIP keine Anzeige.
-
-## ZIP-Dateien
-
-Ein Firmware-Eintrag wird **nur angezeigt, wenn eine ZIP-Datei existiert**. Die ZIP muss im jeweiligen Firmware-Unterverzeichnis liegen und den gleichen Namen wie das Verzeichnis tragen:
-
-```
-firmware/
-  tankstellenanzeige-h0-universal-2.0.6/
-    firmware.bin
-    partitions.bin
-    tankstellenanzeige-h0-universal-2.0.6.zip   <-- diese Datei wird verlinkt
-```
+- **Tankstelle & Video** — Projekt → **Controller** (`variant` aus der `device.json`: `Universal`, `S3Pro`) → **Display** (`Spur H0`/`Spur N` bzw. `0,96"`/`1,05"`/`1,14"`). Das Display wird aus dem Verzeichnisnamen nach dem Schema `project-display-controller-version` ermittelt (mit Fallback für Altverzeichnisse). Jede Download-Zeile trägt die komplette Kombination Titel · Controller · Display · Version.
+- **Zugzielanzeiger** — Projekt → **Gerätefamilie** (`family_name`, z. B. ESP32-S2/S3) → **Variante** (`variant`, Doppelgleis/Einzelgleis). Der Verzeichnisname spielt hier keine Rolle, beide Namensschemas (`zza-universal-1.05-quad-…` und `zza-105quad-universal-…`) funktionieren.
 
 ## Produktbilder
 
