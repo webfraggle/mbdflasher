@@ -51,7 +51,7 @@ Downloaded binaries (`firmware.bin`, `partitions.bin`, `bootloader.bin`, `spiffs
 
 ### Online API Data — `Online-JSON/`
 
-Contains the server-side JSON files and PHP endpoints that power the firmware API. The `firmware_list/all/index.json` is the main catalog. Changes here are deployed to the web server.
+Contains the server-side JSON files and PHP endpoints that power the firmware API. There is no central catalog file: `firmware_list/all/index.php`, `flash_verify/index.php` and the download page `firmware/index.php` all scan the firmware directories on the server and read each one's `device.json` (see `Online-JSON/firmware/README.md`). The old static catalog is kept as `firmware_list/all/index-old.json` for rollback. Changes here are deployed to the web server.
 
 ### Other Files
 

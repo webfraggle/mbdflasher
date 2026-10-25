@@ -1,30 +1,42 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
-$json = file_get_contents('php://input');
+// Pre-flash check of the MBD Flasher.
+//
+// The flasher POSTs {"firmware_id": ...} and expects
+//   {"status": "success", "message": "<checksum of firmware.bin>"}
+// for a firmware that is still offered, otherwise {"status": "failed"}.
+//
+// The firmware is looked up in the device.json files of the firmware
+// directories, with the same rules as api/firmware_list/all/index.php
+// (device.json + firmware.bin must exist).
 
-$data = json_decode($json);
+header('Content-Type: application/json; charset=utf-8');
 
-$firmwareFile = file_get_contents("../firmware_list/all/index.json");
+// firmware/api/flash_verify -> firmware/
+$FIRMWARE_DIR = dirname(__DIR__, 2);
 
-$firmwares = json_decode($firmwareFile);
+$data = json_decode(file_get_contents('php://input'), true);
+$firmwareId = is_array($data) && isset($data['firmware_id']) ? $data['firmware_id'] : null;
 
-// print_r($data);
-// print_r($firmwares);
-$out = [];
-$out['status'] = "failed";
+$out = ['status' => 'failed'];
 
-foreach ($firmwares as $key => $firmware) {
-    // print_r($firmware);
-    // print $data->firmware_id;
-    if ($data->firmware_id == $firmware->id)
-    {
-        $out['status'] = "success";
-        $out['message'] = $firmware->checksum;
-        break;
+if ($firmwareId !== null) {
+    foreach (glob($FIRMWARE_DIR . '/*', GLOB_ONLYDIR) as $path) {
+        if (!is_file($path . '/firmware.bin')) {
+            continue;
+        }
+
+        $raw = @file_get_contents($path . '/device.json');
+        $fw = $raw === false ? null : json_decode($raw, true);
+        if (!is_array($fw) || !isset($fw['id'], $fw['checksum'])) {
+            continue;
+        }
+
+        if ($fw['id'] == $firmwareId) {
+            $out['status'] = 'success';
+            $out['message'] = $fw['checksum'];
+            break;
+        }
     }
 }
-print json_encode($out);
-exit;
 
-?>
+echo json_encode($out);

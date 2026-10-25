@@ -1,13 +1,21 @@
-# Firmware Download-Seite
+# Firmware Download-Seite und Flasher-API
 
-Die `index.php` generiert eine öffentliche Download-Seite für Firmware-ZIPs.
+Es gibt keine zentrale Firmware-Liste mehr. **Jeder Firmware-Ordner beschreibt sich selbst über seine `device.json`.** Neue Firmware = Ordner hochladen, Version zurückziehen = Ordner löschen.
 
-## Datenquelle
+| Datei | Zweck | Ein Ordner zählt, wenn er enthält |
+|---|---|---|
+| `index.php` | öffentliche Download-Seite für ZIPs | `device.json` + `<verzeichnis>.zip` |
+| `api/firmware_list/all/index.php` | Firmware-Katalog für den MBD Flasher | `device.json` + `firmware.bin` |
+| `api/flash_verify/index.php` | Prüfung des Flashers vor dem Download (liefert die Prüfsumme zur Firmware-ID) | `device.json` + `firmware.bin` |
 
-Die Seite ist **unabhängig von der `index.json`**. Sie durchsucht alle Unterverzeichnisse von `firmware/`. Ein Verzeichnis wird angezeigt, wenn es **beides** enthält:
+Die frühere statische `api/firmware_list/all/index.json` liegt als `index-old.json` daneben. Zurück zum alten Stand: `index.php` in diesem Ordner umbenennen und `index-old.json` wieder in `index.json` umbenennen; `flash_verify` müsste dann ebenfalls auf die alte Version zurück.
+
+## Datenquelle der Download-Seite
+
+Die Seite durchsucht alle Unterverzeichnisse von `firmware/`. Ein Verzeichnis wird angezeigt, wenn es **beides** enthält:
 
 - eine ZIP mit dem Namen des Verzeichnisses (`<verzeichnis>/<verzeichnis>.zip`)
-- eine `device.json` (gleiches Format wie ein Eintrag der `index.json`)
+- eine `device.json` (Format siehe unten)
 
 ```
 firmware/
@@ -19,7 +27,11 @@ firmware/
     zza-105quad-universal-3.2.12-beta.zip    <-- diese Datei wird verlinkt
 ```
 
-Fehlt eine der beiden Dateien oder ist die `device.json` fehlerhaft, erscheint der Eintrag nicht. **Ausblenden einer Version = ZIP löschen.**
+Fehlt eine der beiden Dateien oder ist die `device.json` fehlerhaft, erscheint der Eintrag nicht. Nur die ZIP löschen blendet eine Version auf der Download-Seite aus, im Flasher bleibt sie verfügbar.
+
+### Format der `device.json`
+
+Ein Objekt mit denselben Feldern wie früher ein Eintrag der `index.json`, u. a. `id` (eindeutig, stabil), `project_id`, `family_id`, `family_name`, `name`, `version`, `variant`, `download_url`, `checksum`, `download_url_partitions`, `checksum_partitions`, `download_url_spiffs`, `checksum_spiffs`, `spiffs_address`. Die Prüfsummen sind SHA-256 der jeweiligen `.bin`-Datei; der Flasher verwirft Downloads, die nicht passen.
 
 Angezeigt werden nur:
 
