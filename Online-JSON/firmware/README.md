@@ -10,7 +10,14 @@ Liest `api/firmware_list/all/index.json` direkt vom Dateisystem. Angezeigt werde
 - **Project ID 3** — Tankstellenanzeige
 - **Project ID 5** — Video-Werbeanzeige
 
-Alle Versionen werden angezeigt (neueste zuerst), sortiert nach Display-Typ > Gerätefamilie > Controller-Typ.
+Alle Versionen werden angezeigt (neueste zuerst). Die Gruppierung ist projektabhängig:
+
+- **Tankstelle & Video** — Projekt → **Controller** (`Universal`, `S3Pro`) → **Display** (`Spur H0`/`Spur N` bzw. `0,96"`/`1,05"`/`1,14"`). Controller und Display werden aus dem Verzeichnisnamen nach dem Schema `project-display-controller-version` ermittelt (mit Fallback für Altverzeichnisse). Jede Download-Zeile trägt die komplette Kombination Titel · Controller · Display · Version.
+- **Zugzielanzeiger** — unverändert: Projekt → **Gerätefamilie** (ESP32-S2/S3) → **Variante** (Doppelgleis/Einzelgleis).
+
+### Beta-Versionen (ZZA)
+
+Zusätzlich zur JSON werden ZZA-Verzeichnisse nach dem Schema `zza-universal-1.05-quad-3.2.11-beta` (bzw. `zza-0.96-dual-…-beta`) automatisch erkannt, auch wenn sie **nicht** in der `index.json` stehen. Familie und Variante werden aus dem Namen abgeleitet: `1.05` → ESP32-S3, `0.96` → ESP32-S2, `quad` → Doppelgleis, `dual` → Einzelgleis. Auch hier gilt: ohne ZIP keine Anzeige.
 
 ## ZIP-Dateien
 
@@ -26,15 +33,15 @@ firmware/
 
 ## Produktbilder
 
-Bilder werden in `images/downloads/` abgelegt (jpg, jpeg, png oder webp). Die Seite sucht automatisch vom Spezifischsten zum Allgemeinsten:
+Bilder werden in `images/downloads/` abgelegt (jpg, jpeg, png oder webp). Die Seite sucht automatisch vom Spezifischsten zum Allgemeinsten. Die beiden Slugs entsprechen den zwei Gruppierungsebenen (bei Tankstelle/Video **Controller** + **Display**, bei ZZA **Familie** + **Variante**):
 
 | Priorität | Dateiname-Schema | Beispiel |
 |---|---|---|
-| 1 (exakt) | `{projekt}-{familie}-{variante}.jpg` | `tankstellenanzeige-esp32-s3-universal.jpg` |
-| 2 (Familie) | `{projekt}-{familie}.jpg` | `tankstellenanzeige-esp32-s3.jpg` |
+| 1 (exakt) | `{projekt}-{ebene1}-{ebene2}.jpg` | `tankstellenanzeige-universal-spur-h0.jpg` |
+| 2 (Ebene 1) | `{projekt}-{ebene1}.jpg` | `tankstellenanzeige-universal.jpg` |
 | 3 (Projekt) | `{projekt}.jpg` | `tankstellenanzeige.jpg` |
 
-Die Namen werden slugifiziert: Kleinbuchstaben, Umlaute aufgelöst (ä→ae), Sonderzeichen durch Bindestriche ersetzt.
+Die Namen werden slugifiziert: Kleinbuchstaben, Umlaute aufgelöst (ä→ae), Sonderzeichen durch Bindestriche ersetzt (z. B. `1,05"` → `1-05`).
 
 ### Alle gültigen Projekt-Slugs
 
@@ -42,27 +49,26 @@ Die Namen werden slugifiziert: Kleinbuchstaben, Umlaute aufgelöst (ä→ae), So
 - `tankstellenanzeige`
 - `video-werbeanzeige`
 
-### Alle gültigen Familien-Slugs
+### Ebene-1-Slugs (Controller bzw. Familie)
 
-- `esp32-s2`
-- `esp32-s3`
+- `universal`, `s3pro` (Tankstelle/Video – Controller)
+- `esp32-s2`, `esp32-s3` (ZZA – Gerätefamilie)
 
-### Alle gültigen Varianten-Slugs
+### Ebene-2-Slugs (Display bzw. Variante)
 
-- `doppelgleis`
-- `einzelgleis`
-- `universal`
-- `s3pro`
-- `standard` (Fallback wenn keine Variante gesetzt ist)
+- `spur-h0`, `spur-n` (Tankstelle – Display)
+- `0-96-display`, `1-05-display`, `1-14-display` (Video – Display)
+- `doppelgleis`, `einzelgleis` (ZZA – Variante)
+- `standard` (Fallback wenn nichts ermittelt werden konnte)
 
 ### Beispiel
 
-Du möchtest ein Bild für alle Tankstellenanzeigen auf ESP32-S3 zeigen, aber ein spezielles für die S3Pro-Variante:
+Du möchtest ein Bild für alle Tankstellenanzeigen mit Universal-Controller zeigen, aber ein spezielles für Spur H0:
 
 ```
 images/downloads/
-  tankstellenanzeige-esp32-s3.jpg       <-- wird bei "Universal" und "Standard" gezeigt
-  tankstellenanzeige-esp32-s3-s3pro.jpg <-- wird nur bei "S3Pro" gezeigt
+  tankstellenanzeige-universal.jpg          <-- wird bei "Spur N" (und sonst) gezeigt
+  tankstellenanzeige-universal-spur-h0.jpg  <-- wird nur bei "Spur H0" gezeigt
 ```
 
 Kein Bild vorhanden = kein Bild auf der Seite. Die Downloads funktionieren auch ohne Bilder.

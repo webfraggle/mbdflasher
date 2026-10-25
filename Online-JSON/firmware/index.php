@@ -22,16 +22,18 @@ function slugify($text) {
     return trim($text, '-');
 }
 
-// Find a product image — checks from most specific to least specific:
-//   1. images/downloads/{project}-{family}-{variant}.{ext}
-//   2. images/downloads/{project}-{family}.{ext}
+// Find a product image — checks from most specific to least specific.
+// The two grouping slugs are controller + display for Tankstelle/Video and
+// family + variant for ZZA:
+//   1. images/downloads/{project}-{level1}-{level2}.{ext}
+//   2. images/downloads/{project}-{level1}.{ext}
 //   3. images/downloads/{project}.{ext}
 // Supports jpg, jpeg, png, webp
-function findProductImage($projectSlug, $familySlug, $variantSlug) {
+function findProductImage($projectSlug, $level1Slug, $level2Slug) {
     $extensions = ['jpg', 'jpeg', 'png', 'webp'];
     $candidates = [
-        $projectSlug . '-' . $familySlug . '-' . $variantSlug,
-        $projectSlug . '-' . $familySlug,
+        $projectSlug . '-' . $level1Slug . '-' . $level2Slug,
+        $projectSlug . '-' . $level1Slug,
         $projectSlug,
     ];
     foreach ($candidates as $base) {
@@ -53,7 +55,152 @@ function getFirmwareDir($downloadUrl) {
     return null;
 }
 
-// Build grouped structure: project_id -> family_name -> variant -> [entries]
+// ── Grouping helpers ──────────────────────────────────────────────────
+// The firmware directory follows the naming convention
+//   project-display-controller-version   (e.g. tankstellenanzeige-h0-universal-2.0.6)
+// Tankstelle and Video are grouped by Controller (level 1) -> Display
+// (level 2). The Display dimension only lives in the directory name, so it
+// is parsed from there (with fallbacks for legacy directories). ZZA keeps
+// the classic family_name -> variant grouping.
+
+// Pretty controller label. JSON variants are already "Universal"/"S3Pro".
+function formatController($raw) {
+    $map = ['universal' => 'Universal', 's3pro' => 'S3Pro'];
+    $key = strtolower((string) $raw);
+    if (isset($map[$key])) {
+        return $map[$key];
+    }
+    return $raw !== '' ? $raw : 'Standard';
+}
+
+// Sort order for controllers: Universal first, then S3Pro, then the rest.
+function controllerSort($label) {
+    $order = ['Universal' => 0, 'S3Pro' => 1];
+    return $order[$label] ?? 2;
+}
+
+// Tankstelle track gauge label: h0 -> "Spur H0", n -> "Spur N".
+function formatSpur($tok) {
+    $tok = strtolower($tok);
+    if ($tok === 'h0') return 'Spur H0';
+    if ($tok === 'n')  return 'Spur N';
+    return strtoupper($tok);
+}
+
+// Extract the display (track gauge) of a Tankstelle directory.
+function tankstelleDisplay($dir) {
+    // New: tankstellenanzeige-<display>-<controller>-<version>
+    if (preg_match('/^tankstellenanzeige-([a-z0-9]+)-[a-z0-9]+-[0-9]/', $dir, $m)) {
+        return formatSpur($m[1]);
+    }
+    // Legacy: tankstelle-pylon-h0-..., tankstelle-spur-n-...
+    if (preg_match('/-(h0|n)(-|$)/', $dir, $m)) {
+        return formatSpur($m[1]);
+    }
+    return null;
+}
+
+// Normalise a video display size token to "d.dd" ("105" -> "1.05", "96" -> "0.96").
+function normalizeVideoSize($s) {
+    if (strlen($s) === 2) {
+        $s = '0' . $s;
+    }
+    return $s[0] . '.' . substr($s, 1);
+}
+
+// German inch label, e.g. "1.05" -> '1,05" Display'.
+function formatInch($ddd) {
+    return str_replace('.', ',', $ddd) . '" Display';
+}
+
+// Extract the display size of a Video directory (handles new + legacy names).
+function videoDisplay($dir) {
+    // New: video-<digits>-<controller>-<version>   e.g. video-105-universal-3.0.1
+    if (preg_match('/^video-(\d{2,3})-[a-z]+-[0-9]/', $dir, $m)) {
+        return formatInch(normalizeVideoSize($m[1]));
+    }
+    // Legacy A: video-<controller>-<d.dd>-<version>   e.g. video-universal-1.05-2.2
+    if (preg_match('/^video-[a-z]+-(\d\.\d{2})-/', $dir, $m)) {
+        return formatInch($m[1]);
+    }
+    // Legacy B: video-<d.dd>-<version>                e.g. video-0.96-1.0.0
+    if (preg_match('/^video-(\d\.\d{2})-/', $dir, $m)) {
+        return formatInch($m[1]);
+    }
+    return null;
+}
+
+// Sort order for displays: Spur H0, Spur N, then video sizes ascending.
+function displaySort($label) {
+    if (stripos($label, 'H0') !== false)     return 0.0;
+    if (stripos($label, 'Spur N') !== false) return 1.0;
+    if (preg_match('/(\d),(\d{2})/', $label, $m)) {
+        return (float) ($m[1] . '.' . $m[2]);
+    }
+    return 99.0;
+}
+
+// Determine the two grouping levels + the full row title for one firmware.
+// Returns [level1 label, level1 sort, level2 label, level2 sort, row title].
+function groupingFor($fw, $dir, $projectNames) {
+    $pid = $fw['project_id'];
+
+    if ($pid === 3) {            // Tankstellenanzeige: Controller -> Display
+        $l1 = formatController($fw['variant']);
+        $l2 = tankstelleDisplay($dir) ?? ($fw['variant'] ?: 'Standard');
+        $title = $projectNames[$pid] . ' ' . $l1 . ' ' . $l2;
+        return [$l1, controllerSort($l1), $l2, displaySort($l2), $title];
+    }
+
+    if ($pid === 5) {            // Video: Controller (Universal) -> Display
+        $l1 = 'Universal';
+        $l2 = videoDisplay($dir) ?? 'Standard';
+        $title = $projectNames[$pid] . ' ' . $l1 . ' ' . $l2;
+        return [$l1, controllerSort($l1), $l2, displaySort($l2), $title];
+    }
+
+    // ZZA (pid 1) and anything else: classic family_name -> variant.
+    $l1 = $fw['family_name'];
+    $l2 = $fw['variant'] ?: 'Standard';
+    return [$l1, $l1, $l2, $l2, $fw['name']];
+}
+
+// Build a pseudo firmware entry for a ZZA beta directory that is not listed
+// in the JSON, e.g. zza-universal-1.05-quad-3.2.11-beta. Family and variant
+// follow the conventions of the JSON entries (1.05 -> ESP32-S3,
+// 0.96 -> ESP32-S2, quad -> Doppelgleis, dual -> Einzelgleis).
+function zzaBetaFirmware($dir) {
+    if (!preg_match('/^zza-(?:[a-z0-9]+-)?(\d\.\d{2})-(quad|dual)-(\d+(?:\.\d+)*-beta)$/', $dir, $m)) {
+        return null;
+    }
+    return [
+        'name'         => 'Zugzielanzeiger ' . $m[1],
+        'project_id'   => 1,
+        'family_name'  => $m[1] === '0.96' ? 'ESP32-S2' : 'ESP32-S3',
+        'variant'      => $m[2] === 'quad' ? 'Doppelgleis' : 'Einzelgleis',
+        'version'      => $m[3],
+        'download_url' => 'https://www.modellbahn-displays.de/firmware/' . $dir . '/firmware.bin',
+    ];
+}
+
+// Add ZZA beta directories that are not part of the JSON catalog.
+$knownDirs = [];
+foreach ($firmwares as $fw) {
+    $knownDirs[getFirmwareDir($fw['download_url'])] = true;
+}
+foreach (glob(__DIR__ . '/zza-*-beta', GLOB_ONLYDIR) as $path) {
+    $dir = basename($path);
+    if (isset($knownDirs[$dir])) {
+        continue;
+    }
+    $fw = zzaBetaFirmware($dir);
+    if ($fw) {
+        $firmwares[] = $fw;
+    }
+}
+
+// Build grouped structure:
+//   project_id -> level1 -> ['label','sort','level2' => level2 -> ['label','sort','entries']]
 $grouped = [];
 
 foreach ($firmwares as $fw) {
@@ -72,30 +219,39 @@ foreach ($firmwares as $fw) {
     }
 
     $pid = $fw['project_id'];
-    $family = $fw['family_name'];
-    $variant = $fw['variant'] ?: 'Standard';
+    [$l1label, $l1sort, $l2label, $l2sort, $rowTitle] = groupingFor($fw, $dir, $projectNames);
 
-    $grouped[$pid][$family][$variant][] = [
-        'name'    => $fw['name'],
+    if (!isset($grouped[$pid][$l1label])) {
+        $grouped[$pid][$l1label] = ['label' => $l1label, 'sort' => $l1sort, 'level2' => []];
+    }
+    if (!isset($grouped[$pid][$l1label]['level2'][$l2label])) {
+        $grouped[$pid][$l1label]['level2'][$l2label] = ['label' => $l2label, 'sort' => $l2sort, 'entries' => []];
+    }
+
+    $grouped[$pid][$l1label]['level2'][$l2label]['entries'][] = [
+        'title'   => $rowTitle,
         'version' => $fw['version'],
         'dir'     => $dir,
         'zip'     => $dir . '/' . $dir . '.zip',
     ];
 }
 
-// Sort versions descending within each group
-foreach ($grouped as &$families) {
-    ksort($families);
-    foreach ($families as &$variants) {
-        ksort($variants);
-        foreach ($variants as &$entries) {
-            usort($entries, function ($a, $b) {
+// Sort: level1 by sort key, level2 by sort key, entries by version descending.
+$bySort = function ($a, $b) {
+    return ($a['sort'] <=> $b['sort']) ?: strcmp((string) $a['label'], (string) $b['label']);
+};
+foreach ($grouped as &$level1) {
+    uasort($level1, $bySort);
+    foreach ($level1 as &$l1) {
+        uasort($l1['level2'], $bySort);
+        foreach ($l1['level2'] as &$l2) {
+            usort($l2['entries'], function ($a, $b) {
                 return version_compare($b['version'], $a['version']);
             });
         }
     }
 }
-unset($families, $variants, $entries);
+unset($level1, $l1, $l2);
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -292,9 +448,6 @@ unset($families, $variants, $entries);
         .dl-name {
             font-size: 0.9rem;
             color: var(--gray-800);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
         .dl-version {
             font-size: 0.78rem;
@@ -397,30 +550,30 @@ unset($families, $variants, $entries);
                     <h2><?= htmlspecialchars($projectNames[$pid]) ?></h2>
                 </div>
 
-                <?php foreach ($grouped[$pid] as $familyName => $variants): ?>
+                <?php foreach ($grouped[$pid] as $level1): ?>
                     <div class="family">
-                        <div class="family-label"><?= htmlspecialchars($familyName) ?></div>
+                        <div class="family-label"><?= htmlspecialchars($level1['label']) ?></div>
 
-                        <?php foreach ($variants as $variantName => $entries):
+                        <?php foreach ($level1['level2'] as $level2):
                             $projectSlug = slugify($projectNames[$pid]);
-                            $familySlug = slugify($familyName);
-                            $variantSlug = slugify($variantName);
-                            $image = findProductImage($projectSlug, $familySlug, $variantSlug);
+                            $level1Slug = slugify($level1['label']);
+                            $level2Slug = slugify($level2['label']);
+                            $image = findProductImage($projectSlug, $level1Slug, $level2Slug);
                         ?>
                             <div class="variant-card<?= $image ? '' : ' no-image' ?>">
                                 <div class="variant-top">
                                     <?php if ($image): ?>
                                         <div class="variant-image">
-                                            <img src="<?= htmlspecialchars($image) ?>" alt="<?= htmlspecialchars($projectNames[$pid] . ' ' . $familyName . ' ' . $variantName) ?>" loading="lazy">
+                                            <img src="<?= htmlspecialchars($image) ?>" alt="<?= htmlspecialchars($projectNames[$pid] . ' ' . $level1['label'] . ' ' . $level2['label']) ?>" loading="lazy">
                                         </div>
                                     <?php endif; ?>
                                     <div class="variant-body">
-                                        <div class="variant-name"><?= htmlspecialchars($variantName) ?></div>
+                                        <div class="variant-name"><?= htmlspecialchars($level2['label']) ?></div>
                                         <ul class="dl-list">
-                                            <?php foreach ($entries as $entry): ?>
+                                            <?php foreach ($level2['entries'] as $entry): ?>
                                                 <li class="dl-row">
                                                     <div class="dl-info">
-                                                        <span class="dl-name"><?= htmlspecialchars($entry['name']) ?></span>
+                                                        <span class="dl-name"><?= htmlspecialchars($entry['title']) ?></span>
                                                         <span class="dl-version">v<?= htmlspecialchars($entry['version']) ?></span>
                                                     </div>
                                                     <a class="dl-btn" href="<?= htmlspecialchars($entry['zip']) ?>" download>
